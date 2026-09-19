@@ -25,7 +25,7 @@ func main() {
 		fmt.Println("You do not have access to the admin panel.")
 	}
 
-
+// We can also declare a variable in the if statement itself. The variable will only be accessible within the if-else block.
 	if age :=18; age >= 18 {
 		fmt.Println("You are an adult.", age)
 	} else {
