@@ -24,4 +24,11 @@ func main() {
 	} else {
 		fmt.Println("You do not have access to the admin panel.")
 	}
+
+
+	if age :=18; age >= 18 {
+		fmt.Println("You are an adult.", age)
+	} else {
+		fmt.Println("You are not an adult.", age)
+	}
 }
