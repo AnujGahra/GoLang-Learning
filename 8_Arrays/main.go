@@ -38,4 +38,22 @@ func main() {
 	// array with ellipsis
 	arr2 := [...]int{1, 2, 3, 4, 5}
 	fmt.Println(arr2)
+
+
+	// 2D array
+	var matrix [2][3]int
+	matrix[0][0] = 1
+	matrix[0][1] = 2
+	matrix[0][2] = 3
+	matrix[1][0] = 4
+	matrix[1][1] = 5
+	matrix[1][2] = 6
+	
+	fmt.Println(matrix)
+
+	var matrix2 = [2][3]int{{1, 2, 3}, {4, 5, 6}}
+	fmt.Println(matrix2)
+
+	matrix3 := [2][3]int{{1, 2, 3}, {4, 5, 6}}
+	fmt.Println(matrix3)
 }
