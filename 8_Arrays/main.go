@@ -51,9 +51,13 @@ func main() {
 	
 	fmt.Println(matrix)
 
+	// 2D array initialization
 	var matrix2 = [2][3]int{{1, 2, 3}, {4, 5, 6}}
 	fmt.Println(matrix2)
 
+	// 2D array initialization with ellipsis
 	matrix3 := [2][3]int{{1, 2, 3}, {4, 5, 6}}
 	fmt.Println(matrix3)
+
+	
 }
