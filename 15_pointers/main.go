@@ -2,13 +2,11 @@ package main
 
 import "fmt"
 
-
 // by value
 func changeNum(num int) {
 	num = 5
 	fmt.Println("In changeNum", num)
 }
-
 
 // by reference
 func changeNumPtr(num *int) {
@@ -24,4 +22,5 @@ func main() {
 
 	changeNumPtr(&num)
 	fmt.Println("In main", num)
+
 }
