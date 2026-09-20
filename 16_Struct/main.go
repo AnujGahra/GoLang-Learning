@@ -13,6 +13,14 @@ type order struct {
 	createdAt time.Time // nanoseconds precision
 }
 
+func ( o *order) getAmount() float64 {
+	return o.amount
+}
+
+func ( o *order) getStatus() string {
+	return o.status
+}
+
 func main() {
 
 	myOrder := order{
@@ -41,5 +49,8 @@ func main() {
 	fmt.Println("Order Amount:", order2.amount)
 	fmt.Println("Order Status:", order2.status)
 	fmt.Println("Order Created At:", order2.createdAt)
+
+	fmt.Println("Order Amount:", myOrder.getAmount())
+	fmt.Println("Order Status:", myOrder.getStatus())
 
 }
