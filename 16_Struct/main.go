@@ -1,6 +1,9 @@
 package main
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 
 type order struct {
@@ -12,11 +15,17 @@ type order struct {
 
 func main() {
 
-	order1 := order{
+	myOrder := order{
 		id: "1",
 		amount: 100.0,
 		status: "pending",
 		createdAt: time.Now(),
 	}
+
+	fmt.Println("Order Struct", myOrder)
+	fmt.Println("Order ID:", myOrder.id)
+	fmt.Println("Order Amount:", myOrder.amount)
+	fmt.Println("Order Status:", myOrder.status)
+	fmt.Println("Order Created At:", myOrder.createdAt)
 
 }
