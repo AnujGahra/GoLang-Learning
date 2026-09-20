@@ -14,6 +14,16 @@ func main() {
 	fmt.Println(len(nums))
 	fmt.Println(nums == nil)
 
-	var nums2 = make([]int, 2)
+	var nums2 = make([]int, 2, 5)
 	fmt.Println(nums2)
+	// capacity of slice is 5
+	fmt.Println(cap(nums2))
+
+	// slice initialization
+	nums3 := []int{1, 2, 3}
+	fmt.Println(nums3)
+
+	nums2 = append(nums2, 1)
+	fmt.Println(nums2)
+	fmt.Println(cap(nums2))
 }
