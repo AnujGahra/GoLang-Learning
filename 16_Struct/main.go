@@ -28,4 +28,18 @@ func main() {
 	fmt.Println("Order Status:", myOrder.status)
 	fmt.Println("Order Created At:", myOrder.createdAt)
 
+
+	order2 := order{
+		id: "2",
+		amount: 200.0,
+		status: "completed",
+		createdAt: time.Now(),
+	}
+
+	fmt.Println("Order Struct", order2)
+	fmt.Println("Order ID:", order2.id)
+	fmt.Println("Order Amount:", order2.amount)
+	fmt.Println("Order Status:", order2.status)
+	fmt.Println("Order Created At:", order2.createdAt)
+
 }
