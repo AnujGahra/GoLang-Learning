@@ -27,4 +27,15 @@ func main() {
 	names[0] = "John"
 	names[1] = "Doe"
 	fmt.Println(names)
+
+	// array initialization
+	var arr = [3]int{1, 2, 3}
+	fmt.Println(arr)
+
+	nums2 := [4]int{1, 2, 3, 4}
+	fmt.Println(nums2)
+
+	// array with ellipsis
+	arr2 := [...]int{1, 2, 3, 4, 5}
+	fmt.Println(arr2)
 }
