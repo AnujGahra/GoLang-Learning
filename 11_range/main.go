@@ -5,10 +5,9 @@ import "fmt"
 // Iteration for data structure
 func main() {
 
-
 	nums := []int{1, 2, 3, 4, 5}
 
-	for i:=0; i<len(nums); i++ {
+	for i := 0; i < len(nums); i++ {
 		fmt.Println(nums[i])
 	}
 
@@ -20,10 +19,9 @@ func main() {
 		fmt.Println(v)
 	}
 
-
 	m := map[string]string{
 		"name": "John",
-		"age": "30",
+		"age":  "30",
 		"city": "New York",
 	}
 
@@ -37,15 +35,14 @@ func main() {
 
 	for _, v := range m {
 		fmt.Println(v)
-	}	
-
+	}
 
 	for i, c := range "Hello" {
 		fmt.Println(i, c)
 	}
 
-	
 	for i, c := range "Hello" {
 		fmt.Println(i, string(c))
 	}
+
 }
