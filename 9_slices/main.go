@@ -14,7 +14,7 @@ func main() {
 	fmt.Println(len(nums))
 	fmt.Println(nums == nil)
 
-	var nums2 = make([]int, 2, 5)
+	var nums2 = make([]int, 0, 5)
 	fmt.Println(nums2)
 	// capacity of slice is 5
 	fmt.Println(cap(nums2))
@@ -24,6 +24,7 @@ func main() {
 	fmt.Println(nums3)
 
 	nums2 = append(nums2, 1)
+	nums2 = append(nums2, 2)
 	fmt.Println(nums2)
 	fmt.Println(cap(nums2))
 }
