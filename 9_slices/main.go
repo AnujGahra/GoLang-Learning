@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 // slices are like arrays but they are dynamic in size. They are built on top of arrays and provide more functionality. Slices are more flexible than arrays and can be resized, appended to, and copied.
 // + useful methods: append, copy, len, cap
@@ -39,5 +42,21 @@ func main() {
 	fmt.Println(nums5)
 
 
-	
+	// slice equal methods
+	var nums6 = []int{1, 2}
+	var nums7 = []int{1, 2}
+	fmt.Println(nums6 == nil)
+	fmt.Println(nums7 == nil)
+	fmt.Println(len(nums6) == len(nums7))
+	fmt.Println(cap(nums6) == cap(nums7))
+	fmt.Println(nums6[0] == nums7[0])
+	fmt.Println(nums6[1] == nums7[1])
+	fmt.Println(slices.Equal(nums6, nums7))
+
+
+	// 2D slices
+	var nums8 = [][]int{{1, 2}, {3, 4}}
+	fmt.Println(nums8)
+	fmt.Println(nums8[0][0])
+	fmt.Println(nums8[1][1])
 }
