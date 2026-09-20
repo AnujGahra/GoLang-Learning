@@ -27,4 +27,17 @@ func main() {
 	nums2 = append(nums2, 2)
 	fmt.Println(nums2)
 	fmt.Println(cap(nums2))
+
+
+	// copying slices
+	nums4 := make([]int, len(nums3))
+	copy(nums4, nums3)
+	fmt.Println(nums4)
+
+	// slicing slices
+	nums5 := nums3[1:3]
+	fmt.Println(nums5)
+
+
+	
 }
