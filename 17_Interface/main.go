@@ -5,7 +5,7 @@ import "fmt"
 
 
 type payment struct{
-	gateway stripe
+	gateway razorpay | stripe
 }
 
 
@@ -34,7 +34,10 @@ func (s stripe) pay(amount float64) {
 
 func main() {
 
-	newPayment := payment{}
+	stripePaymentGw := stripe{}
+	razorpayPaymentGw := razorpay{}
+
+	newPayment := payment{gateway: razorpayPaymentGw}
 	newPayment.makePayment(1000)
 
 
