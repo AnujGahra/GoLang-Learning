@@ -9,8 +9,11 @@ type payment struct{}
 
 func (p payment) makePayment(amount float64) {
 	// Implementation for making payment
-	razorpayPaymentGw := razorpay{}
-	razorpayPaymentGw.pay(amount)
+	// razorpayPaymentGw := razorpay{}
+	// razorpayPaymentGw.pay(amount)
+
+	stripePaymentGw := stripe{}
+	stripePaymentGw.pay(amount)
 }
 
 type razorpay struct {}
@@ -18,6 +21,12 @@ type razorpay struct {}
 
 func (r razorpay) pay(amount float64) {
 	fmt.Println("make payment using razorpay", amount)
+}
+
+type stripe struct {}
+
+func (s stripe) pay(amount float64) {
+	fmt.Println("make payment using stripe", amount)
 }
 
 func main() {
