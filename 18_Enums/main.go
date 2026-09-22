@@ -2,12 +2,20 @@ package main
 
 import "fmt"
 
+type OrderStatus int
 
 
-func changeOrderStatus(status string) {
+const (
+	Received OrderStatus = iota
+	Confirmed
+	prepared
+	Delivered
+)
+
+func changeOrderStatus(status OrderStatus) {
 	fmt.Println("Changing order status to", status)
 }
  
 func main() {
-	changeOrderStatus("shipped")
+	changeOrderStatus(Received)
 }
