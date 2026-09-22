@@ -6,10 +6,10 @@ type OrderStatus int
 
 
 const (
-	Received OrderStatus = iota
-	Confirmed
-	prepared
-	Delivered
+	Received OrderStatus = "received"
+	Confirmed = "confirmed"
+	Prepared = "prepared"
+	Delivered = "delivered"
 )
 
 func changeOrderStatus(status OrderStatus) {
@@ -17,5 +17,5 @@ func changeOrderStatus(status OrderStatus) {
 }
  
 func main() {
-	changeOrderStatus(Received)
+	changeOrderStatus(Prepared)
 }
