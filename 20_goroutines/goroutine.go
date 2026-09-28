@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 
 func task(id int) {
@@ -11,7 +14,10 @@ func task(id int) {
 func main() {
 
 	for i := 0; i <= 10; i++ {
-		task(i)
+		go task(i)
 	}
+
+
+	time.Sleep(time.Second * 2)
 
 }
