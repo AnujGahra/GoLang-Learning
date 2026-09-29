@@ -45,4 +45,14 @@ func main() {
 // 	fmt.Println("data", d, string(buf[i]))
 //  }
 
+	// data, err := os.ReadFile("example.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
+
+	// fmt.Println(string(data))
+
+
+	
+
 }
