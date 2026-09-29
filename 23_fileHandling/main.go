@@ -18,5 +18,10 @@ func main() {
 		// log the error 
 		panic(err)
 	}
-	fmt.Println("FileName: ", fileInfo.Name())
+	// fmt.Println("File Name: ", fileInfo.Name())
+	// fmt.Println("File IsDir: ", fileInfo.IsDir())
+	// fmt.Println("File Size: ", fileInfo.Size())
+	// fmt.Println("File Perission: ", fileInfo.Mode())
+	// fmt.Println("File modified at: ", fileInfo.ModTime())
+
 }
